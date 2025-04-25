@@ -592,7 +592,7 @@
     `(magit-branch-current ((t (:foreground ,nord9   :weight bold :box t))))
     `(magit-section-heading ((t (:foreground ,nord9 :weight bold))))
     `(magit-section-heading-selection ((t (:foreground ,nord10 :weight bold))))
-    `(magit-diff-context-highlight ((,class (:background ,nord2))))
+    `(magit-diff-context-highlight ((,class (:background ,nord3))))
     `(magit-diff-file-header ((,class (:foreground ,nord8 :box (:color ,nord8)))))
     `(magit-diffstat-added ((,class (:foreground ,nord14))))
     `(magit-diffstat-removed ((,class (:foreground ,nord11))))
