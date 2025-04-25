@@ -610,6 +610,11 @@
     `(magit-section-heading ((,class (:foreground ,nord7 :weight bold))))
     `(magit-section-highlight ((,class (:background ,nord2))))
 
+    ;; > Transient
+    ;; https://github.com/magit/transient/blob/main/lisp/transient.el#L561
+    `(transient-key-stay ((,class (:foreground ,nord13))))
+    `(transient-key-exit ((,class (:foreground ,nord15))))
+
     ;; > MU4E
     `(mu4e-header-marks-face ((,class (:foreground ,nord9))))
     `(mu4e-title-face ((,class (:foreground ,nord8))))
