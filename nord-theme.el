@@ -504,7 +504,7 @@
     `(company-tooltip-common ((,class (:foreground ,nord8))))
     `(company-tooltip-common-selection ((,class (:foreground ,nord8 :background ,nord3))))
     `(company-tooltip-mouse ((,class (:inherit highlight))))
-    `(company-tooltip-selection ((,class (:background ,nord3 :weight bold))))
+    `(company-tooltip-selection ((,class (:background ,nord9 :weight bold))))
 
     ;; > diff-hl
    `(diff-hl-change ((,class (:background ,nord13))))
