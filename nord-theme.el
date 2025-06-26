@@ -502,9 +502,9 @@
     `(company-tooltip-annotation ((,class (:foreground ,nord15))))
     `(company-tooltip-annotation-selection ((,class (:foreground ,nord12 :weight bold))))
     `(company-tooltip-common ((,class (:foreground ,nord8))))
-    `(company-tooltip-common-selection ((,class (:foreground ,nord8 :background ,nord15))))
+    `(company-tooltip-common-selection ((,class (:foreground ,nord8 :background ,nord3))))
     `(company-tooltip-mouse ((,class (:inherit highlight))))
-    `(company-tooltip-selection ((,class (:background ,nord15 :weight bold))))
+    `(company-tooltip-selection ((,class (:background ,nord3 :weight bold))))
 
     ;; > diff-hl
    `(diff-hl-change ((,class (:background ,nord13))))
