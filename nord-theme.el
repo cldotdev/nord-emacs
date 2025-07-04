@@ -197,7 +197,7 @@
     `(button ((,class (:background ,nord0 :foreground ,nord8 :box (:line-width 2 :color ,nord4 :style pressed-button)))))
     `(completions-annotations ((,class (:foreground ,nord9))))
     `(completions-common-part ((,class (:foreground ,nord8 :weight bold))))
-    `(completions-first-difference ((,class (:foreground ,nord11))))
+    `(completions-first-difference ((,class (:foreground ,nord15))))
     `(custom-button ((,class (:background ,nord0 :foreground ,nord8 :box (:line-width 2 :color ,nord4 :style pressed-button)))))
     `(custom-button-mouse ((,class (:background ,nord4 :foreground ,nord0 :box (:line-width 2 :color ,nord4 :style pressed-button)))))
     `(custom-button-pressed ((,class (:background ,nord6 :foreground ,nord0 :box (:line-width 2 :color ,nord4 :style pressed-button)))))
