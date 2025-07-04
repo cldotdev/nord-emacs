@@ -730,7 +730,18 @@
     `(persp-selected-face ((,class (:foreground ,nord8 :weight bold))))
 
     ;; highlight-numbers
-    `(highlight-numbers-number ((,class (:foreground ,nord-numeric))))))
+    `(highlight-numbers-number ((,class (:foreground ,nord-numeric))))
+
+    ;; vertico
+    `(vertico-current ((t (:background ,nord3 :weight bold))))
+
+    ;; orderless
+    `(orderless-match-face-0 ((t (:foreground ,nord10 :weight bold))))
+    `(orderless-match-face-1 ((t (:foreground ,nord15 :weight bold))))
+    `(orderless-match-face-2 ((t (:foreground ,nord9 :weight bold))))
+    `(orderless-match-face-3 ((t (:foreground ,nord13 :weight bold))))
+
+    ))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
