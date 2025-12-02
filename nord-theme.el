@@ -601,14 +601,18 @@
     `(magit-diff-removed ((t (:foreground ,nord11))))
     `(magit-diff-removed-highlight ((t (:foreground ,nord11))))
     `(magit-hash ((,class (:foreground ,nord8))))
-    `(magit-hunk-heading ((,class (:foreground ,nord9))))
-    `(magit-hunk-heading-highlight ((,class (:foreground ,nord9 :background ,nord2))))
+    `(magit-hunk-heading ((,class (:foreground ,nord13))))
+    `(magit-hunk-heading-highlight ((,class (:foreground ,nord13))))
+    `(magit-diff-hunk-heading ((,class (:foreground ,nord13))))
+    `(magit-diff-hunk-heading-highlight ((,class (:foreground ,nord13))))
     `(magit-item-highlight ((,class (:foreground ,nord8 :background ,nord2))))
     `(magit-log-author ((,class (:foreground ,nord7))))
     `(magit-process-ng ((,class (:foreground ,nord13 :weight bold))))
     `(magit-process-ok ((,class (:foreground ,nord14 :weight bold))))
     `(magit-section-heading ((,class (:foreground ,nord7 :weight bold))))
     `(magit-section-highlight ((,class (:background ,nord2))))
+    `(magit-diff-revision-summary ((,class (:inherit nil))))
+    `(magit-diff-revision-summary-highlight ((,class (:background ,nord2 :extend t))))
 
     ;; > Transient
     ;; https://github.com/magit/transient/blob/main/lisp/transient.el#L561
