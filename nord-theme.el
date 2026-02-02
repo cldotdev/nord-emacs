@@ -745,6 +745,16 @@
     `(orderless-match-face-2 ((t (:foreground ,nord9 :weight bold))))
     `(orderless-match-face-3 ((t (:foreground ,nord13 :weight bold))))
 
+    ;; > imenu-list
+    `(imenu-list-entry-face-0 ((,class (:foreground ,nord8))))
+    `(imenu-list-entry-subalist-face-0 ((,class (:foreground ,nord8 :weight bold :underline t))))
+    `(imenu-list-entry-face-1 ((,class (:foreground ,nord9))))
+    `(imenu-list-entry-subalist-face-1 ((,class (:foreground ,nord9 :weight bold :underline t))))
+    `(imenu-list-entry-face-2 ((,class (:foreground ,nord14))))
+    `(imenu-list-entry-subalist-face-2 ((,class (:foreground ,nord14 :weight bold :underline t))))
+    `(imenu-list-entry-face-3 ((,class (:foreground ,nord15))))
+    `(imenu-list-entry-subalist-face-3 ((,class (:foreground ,nord15 :weight bold :underline t))))
+
     ))
 
 ;;;###autoload
