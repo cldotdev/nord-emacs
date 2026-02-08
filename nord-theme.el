@@ -754,6 +754,8 @@
     `(imenu-list-entry-subalist-face-2 ((,class (:foreground ,nord14 :weight bold :underline t))))
     `(imenu-list-entry-face-3 ((,class (:foreground ,nord15))))
     `(imenu-list-entry-subalist-face-3 ((,class (:foreground ,nord15 :weight bold :underline t))))
+    `(imenu-list-entry-face-4 ((,class (:foreground ,nord13))))
+    `(imenu-list-entry-subalist-face-4 ((,class (:foreground ,nord13 :weight bold :underline t))))
 
     ))
 
