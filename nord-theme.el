@@ -506,6 +506,19 @@
     `(company-tooltip-mouse ((,class (:inherit highlight))))
     `(company-tooltip-selection ((,class (:background ,nord3 :weight bold))))
 
+    ;; > Corfu
+    `(corfu-default ((,class (:foreground ,nord4 :background ,nord2))))
+    `(corfu-current ((,class (:background ,nord3 :weight bold))))
+    `(corfu-bar ((,class (:background ,nord3))))
+    `(corfu-border ((,class (:background ,nord1))))
+    `(corfu-annotations ((,class (:foreground ,nord15))))
+    `(corfu-deprecated ((,class (:strike-through t :inherit corfu-default))))
+    `(corfu-echo ((,class (:inherit shadow))))
+    `(corfu-indexed ((,class (:foreground ,nord13 :weight bold))))
+    `(corfu-popupinfo ((,class (:foreground ,nord4 :background ,nord1))))
+    `(corfu-quick1 ((,class (:foreground ,nord13 :weight bold))))
+    `(corfu-quick2 ((,class (:foreground ,nord12 :weight bold))))
+
     ;; > diff-hl
    `(diff-hl-change ((,class (:background ,nord13))))
    `(diff-hl-insert ((,class (:background ,nord14))))
