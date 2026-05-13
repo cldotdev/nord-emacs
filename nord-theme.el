@@ -158,6 +158,8 @@
     `(font-lock-keyword-face ((,class (:foreground ,nord9))))
     `(font-lock-negation-char-face ((,class (:foreground ,nord9))))
     `(font-lock-preprocessor-face ((,class (:foreground ,nord10 :weight bold))))
+    `(font-lock-property-name-face ((,class (:foreground ,nord8))))
+    `(font-lock-property-use-face ((,class (:foreground ,nord8))))
     `(font-lock-reference-face ((,class (:foreground ,nord9))))
     `(font-lock-regexp-grouping-backslash ((,class (:foreground ,nord13))))
     `(font-lock-regexp-grouping-construct ((,class (:foreground ,nord13))))
