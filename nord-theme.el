@@ -1,4 +1,4 @@
- ;;; nord-theme.el --- An arctic, north-bluish clean and elegant theme
+;;; nord-theme.el --- An arctic, north-bluish clean and elegant theme
 
 ;; Copyright (C) 2016-present Arctic Ice Studio <development@arcticicestudio.com> (https://www.arcticicestudio.com)
 ;; Copyright (C) 2016-present Sven Greb <development@svengreb.de> (https://www.svengreb.de)
