@@ -118,7 +118,7 @@
   (nord-annotation (if (nord-display-truecolor-or-graphic-p) "#D08770" "brightyellow"))
   (nord-attribute (if (nord-display-truecolor-or-graphic-p) "#8FBCBB" "cyan"))
   (nord-class (if (nord-display-truecolor-or-graphic-p) "#8FBCBB" "cyan"))
-  (nord-comment (if (nord-display-truecolor-or-graphic-p) (nord-theme--brightened-comment-color nord-comment-brightness) "brightblack"))
+  (nord-comment (if (nord-display-truecolor-or-graphic-p) (nord-theme--brightened-comment-color nord-comment-brightness) "brightblue"))
   (nord-escape (if (nord-display-truecolor-or-graphic-p) "#D08770" "brightyellow"))
   (nord-method (if (nord-display-truecolor-or-graphic-p) "#88C0D0" "brightcyan"))
   (nord-keyword (if (nord-display-truecolor-or-graphic-p) "#81A1C1" "blue"))
@@ -158,6 +158,8 @@
     `(font-lock-keyword-face ((,class (:foreground ,nord9))))
     `(font-lock-negation-char-face ((,class (:foreground ,nord9))))
     `(font-lock-preprocessor-face ((,class (:foreground ,nord10 :weight bold))))
+    `(font-lock-property-name-face ((,class (:foreground ,nord8))))
+    `(font-lock-property-use-face ((,class (:foreground ,nord8))))
     `(font-lock-reference-face ((,class (:foreground ,nord9))))
     `(font-lock-regexp-grouping-backslash ((,class (:foreground ,nord13))))
     `(font-lock-regexp-grouping-construct ((,class (:foreground ,nord13))))
@@ -191,18 +193,21 @@
     `(diff-refine-removed ((,class (:foreground ,nord11))))
     `(diff-removed ((,class (:foreground ,nord11))))
 
+    ;; > Sh Script
+    `(sh-quoted-exec ((,class (:foreground ,nord8))))
+
     ;; +--- UI ---+
     `(border ((,class (:foreground ,nord4))))
     `(buffer-menu-buffer ((,class (:foreground ,nord4 :weight bold))))
-    `(button ((,class (:background ,nord0 :foreground ,nord8 :box (:line-width 2 :color ,nord4 :style sunken-button)))))
+    `(button ((,class (:background ,nord0 :foreground ,nord8 :box (:line-width 2 :color ,nord4 :style pressed-button)))))
     `(completions-annotations ((,class (:foreground ,nord9))))
-    `(completions-common-part ((,class (:foreground ,nord8 :weight bold))))
-    `(completions-first-difference ((,class (:foreground ,nord11))))
-    `(custom-button ((,class (:background ,nord0 :foreground ,nord8 :box (:line-width 2 :color ,nord4 :style sunken-button)))))
-    `(custom-button-mouse ((,class (:background ,nord4 :foreground ,nord0 :box (:line-width 2 :color ,nord4 :style sunken-button)))))
-    `(custom-button-pressed ((,class (:background ,nord6 :foreground ,nord0 :box (:line-width 2 :color ,nord4 :style sunken-button)))))
-    `(custom-button-pressed-unraised ((,class (:background ,nord4 :foreground ,nord0 :box (:line-width 2 :color ,nord4 :style sunken-button)))))
-    `(custom-button-unraised ((,class (:background ,nord0 :foreground ,nord8 :box (:line-width 2 :color ,nord4 :style sunken-button)))))
+    `(completions-common-part ((,class (:foreground ,nord7))))
+    `(completions-first-difference ((,class (:foreground ,nord9))))
+    `(custom-button ((,class (:background ,nord0 :foreground ,nord8 :box (:line-width 2 :color ,nord4 :style pressed-button)))))
+    `(custom-button-mouse ((,class (:background ,nord4 :foreground ,nord0 :box (:line-width 2 :color ,nord4 :style pressed-button)))))
+    `(custom-button-pressed ((,class (:background ,nord6 :foreground ,nord0 :box (:line-width 2 :color ,nord4 :style pressed-button)))))
+    `(custom-button-pressed-unraised ((,class (:background ,nord4 :foreground ,nord0 :box (:line-width 2 :color ,nord4 :style pressed-button)))))
+    `(custom-button-unraised ((,class (:background ,nord0 :foreground ,nord8 :box (:line-width 2 :color ,nord4 :style pressed-button)))))
     `(custom-changed ((,class (:foreground ,nord13))))
     `(custom-comment ((,class (:foreground ,nord-comment))))
     `(custom-comment-tag ((,class (:foreground ,nord7))))
@@ -224,8 +229,9 @@
     `(highlight ((,class (:foreground ,nord8 :background ,nord2))))
     `(hl-line ((,class (:background ,nord1))))
     `(info-menu-star ((,class (:foreground ,nord9))))
-    `(isearch ((,class (:foreground ,nord0 :background ,nord8))))
+    `(isearch ((,class (:foreground ,nord0 :background ,nord8 :weight bold))))
     `(isearch-fail ((,class (:foreground ,nord11))))
+    `(lazy-highlight ((,class (:foreground ,nord0 :background ,nord10))))
     `(link ((,class (:underline t))))
     `(link-visited ((,class (:underline t))))
     `(linum ((,class (:foreground ,nord3 :background ,nord0))))
@@ -281,10 +287,10 @@
     ;; https://github.com/arcticicestudio/nord-emacs/issues/75
     ;; http://git.savannah.gnu.org/cgit/emacs.git/commit/?id=c430f7e23fc2c22f251ace4254e37dea1452dfc3
     ;; https://github.com/emacs-mirror/emacs/commit/c430f7e23fc2c22f251ace4254e37dea1452dfc3
-    `(show-paren-match-face ((,class (:foreground ,nord0 :background ,nord8))))
+    `(show-paren-match-face ((,class (:foreground ,nord6 :background ,nord3))))
     `(show-paren-mismatch-face ((,class (:background ,nord11))))
 
-    `(show-paren-match ((,class (:foreground ,nord0 :background ,nord8))))
+    `(show-paren-match ((,class (:foreground ,nord6 :background ,nord3))))
     `(show-paren-mismatch ((,class (:background ,nord11))))
     `(success ((,class (:foreground ,nord14))))
     `(term ((,class (:foreground ,nord4 :background ,nord0))))
@@ -498,18 +504,31 @@
     `(company-scrollbar-fg ((,class (:foreground ,nord2 :background ,nord2))))
     `(company-template-field ((,class (:foreground ,nord0 :background ,nord7))))
     `(company-tooltip ((,class (:foreground ,nord4 :background ,nord2))))
-    `(company-tooltip-annotation ((,class (:foreground ,nord12))))
+    `(company-tooltip-annotation ((,class (:foreground ,nord15))))
     `(company-tooltip-annotation-selection ((,class (:foreground ,nord12 :weight bold))))
     `(company-tooltip-common ((,class (:foreground ,nord8))))
     `(company-tooltip-common-selection ((,class (:foreground ,nord8 :background ,nord3))))
     `(company-tooltip-mouse ((,class (:inherit highlight))))
     `(company-tooltip-selection ((,class (:background ,nord3 :weight bold))))
 
+    ;; > Corfu
+    `(corfu-default ((,class (:foreground ,nord4 :background ,nord1))))
+    `(corfu-current ((,class (:foreground ,nord8 :background ,nord3 :weight bold))))
+    `(corfu-bar ((,class (:background ,nord3))))
+    `(corfu-border ((,class (:background ,nord0))))
+    `(corfu-annotations ((,class (:foreground ,nord9))))
+    `(corfu-deprecated ((,class (:strike-through t :inherit corfu-default))))
+    `(corfu-echo ((,class (:inherit shadow))))
+    `(corfu-indexed ((,class (:foreground ,nord13 :weight bold))))
+    `(corfu-popupinfo ((,class (:foreground ,nord4 :background ,nord2))))
+    `(corfu-quick1 ((,class (:foreground ,nord13 :weight bold))))
+    `(corfu-quick2 ((,class (:foreground ,nord12 :weight bold))))
+
     ;; > diff-hl
    `(diff-hl-change ((,class (:background ,nord13))))
    `(diff-hl-insert ((,class (:background ,nord14))))
    `(diff-hl-delete ((,class (:background ,nord11))))
-   
+
     ;; > Evil
     `(evil-ex-info ((,class (:foreground ,nord8))))
     `(evil-ex-substitute-replacement ((,class (:foreground ,nord9))))
@@ -585,19 +604,38 @@
 
     ;; > Magit
     `(magit-branch ((,class (:foreground ,nord7 :weight bold))))
-    `(magit-diff-context-highlight ((,class (:background ,nord2))))
+    `(magit-tag ((t (:foreground ,nord13))))
+    `(magit-branch-remote ((t (:foreground ,nord14  :weight bold))))
+    `(magit-branch-local ((t (:foreground ,nord15   :weight bold))))
+    `(magit-branch-current ((t (:foreground ,nord9   :weight bold :box t))))
+    `(magit-section-heading ((t (:foreground ,nord9 :weight bold))))
+    `(magit-section-heading-selection ((t (:foreground ,nord10 :weight bold))))
+    `(magit-diff-context-highlight ((,class (:background ,nord3))))
     `(magit-diff-file-header ((,class (:foreground ,nord8 :box (:color ,nord8)))))
     `(magit-diffstat-added ((,class (:foreground ,nord14))))
     `(magit-diffstat-removed ((,class (:foreground ,nord11))))
+    `(magit-diff-added ((t (:foreground ,nord14))))
+    `(magit-diff-added-highlight ((t (:foreground ,nord14))))
+    `(magit-diff-removed ((t (:foreground ,nord11))))
+    `(magit-diff-removed-highlight ((t (:foreground ,nord11))))
     `(magit-hash ((,class (:foreground ,nord8))))
-    `(magit-hunk-heading ((,class (:foreground ,nord9))))
-    `(magit-hunk-heading-highlight ((,class (:foreground ,nord9 :background ,nord2))))
+    `(magit-hunk-heading ((,class (:foreground ,nord4))))
+    `(magit-hunk-heading-highlight ((,class (:foreground ,nord4))))
+    `(magit-diff-hunk-heading ((,class (:foreground ,nord4))))
+    `(magit-diff-hunk-heading-highlight ((,class (:foreground ,nord4))))
     `(magit-item-highlight ((,class (:foreground ,nord8 :background ,nord2))))
     `(magit-log-author ((,class (:foreground ,nord7))))
     `(magit-process-ng ((,class (:foreground ,nord13 :weight bold))))
     `(magit-process-ok ((,class (:foreground ,nord14 :weight bold))))
     `(magit-section-heading ((,class (:foreground ,nord7 :weight bold))))
     `(magit-section-highlight ((,class (:background ,nord2))))
+    `(magit-diff-revision-summary ((,class (:inherit nil))))
+    `(magit-diff-revision-summary-highlight ((,class (:background ,nord2 :extend t))))
+
+    ;; > Transient
+    ;; https://github.com/magit/transient/blob/main/lisp/transient.el#L561
+    `(transient-key-stay ((,class (:foreground ,nord13))))
+    `(transient-key-exit ((,class (:foreground ,nord15))))
 
     ;; > MU4E
     `(mu4e-header-marks-face ((,class (:foreground ,nord9))))
@@ -705,7 +743,39 @@
     `(ivy-minibuffer-match-face-2 ((,class (:background ,nord7 :foreground ,nord0))))
     `(ivy-minibuffer-match-face-3 ((,class (:background ,nord8 :foreground ,nord0))))
     `(ivy-minibuffer-match-face-4 ((,class (:background ,nord9 :foreground ,nord0))))
-    `(ivy-remote ((,class (:foreground ,nord14))))))
+    `(ivy-remote ((,class (:foreground ,nord14))))
+    `(ivy-posframe ((,class (:background ,nord1))))
+    `(ivy-posframe-border ((,class (:background ,nord1))))
+    `(ivy-remote ((,class (:foreground ,nord14))))
+
+    ;; > perspective
+    `(persp-selected-face ((,class (:foreground ,nord8 :weight bold))))
+
+    ;; highlight-numbers
+    `(highlight-numbers-number ((,class (:foreground ,nord-numeric))))
+
+    ;; vertico
+    `(vertico-current ((t (:background ,nord3 :weight bold))))
+
+    ;; orderless
+    `(orderless-match-face-0 ((t (:foreground ,nord10 :weight bold))))
+    `(orderless-match-face-1 ((t (:foreground ,nord15 :weight bold))))
+    `(orderless-match-face-2 ((t (:foreground ,nord9 :weight bold))))
+    `(orderless-match-face-3 ((t (:foreground ,nord13 :weight bold))))
+
+    ;; > imenu-list
+    `(imenu-list-entry-face-0 ((,class (:foreground ,nord9))))
+    `(imenu-list-entry-subalist-face-0 ((,class (:foreground ,nord9 :weight bold :underline t))))
+    `(imenu-list-entry-face-1 ((,class (:foreground ,nord7))))
+    `(imenu-list-entry-subalist-face-1 ((,class (:foreground ,nord7 :weight bold :underline t))))
+    `(imenu-list-entry-face-2 ((,class (:foreground ,nord14))))
+    `(imenu-list-entry-subalist-face-2 ((,class (:foreground ,nord14 :weight bold :underline t))))
+    `(imenu-list-entry-face-3 ((,class (:foreground ,nord15))))
+    `(imenu-list-entry-subalist-face-3 ((,class (:foreground ,nord15 :weight bold :underline t))))
+    `(imenu-list-entry-face-4 ((,class (:foreground ,nord13))))
+    `(imenu-list-entry-subalist-face-4 ((,class (:foreground ,nord13 :weight bold :underline t))))
+
+    ))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
