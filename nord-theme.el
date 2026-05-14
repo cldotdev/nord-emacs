@@ -193,6 +193,9 @@
     `(diff-refine-removed ((,class (:foreground ,nord11))))
     `(diff-removed ((,class (:foreground ,nord11))))
 
+    ;; > Sh Script
+    `(sh-quoted-exec ((,class (:foreground ,nord8))))
+
     ;; +--- UI ---+
     `(border ((,class (:foreground ,nord4))))
     `(buffer-menu-buffer ((,class (:foreground ,nord4 :weight bold))))
