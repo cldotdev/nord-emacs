@@ -154,9 +154,12 @@
     `(font-lock-comment-delimiter-face ((,class (:foreground ,nord-comment))))
     `(font-lock-constant-face ((,class (:foreground ,nord9))))
     `(font-lock-doc-face ((,class (:foreground ,nord-comment))))
+    `(font-lock-escape-face ((,class (:foreground ,nord-escape))))
     `(font-lock-function-name-face ((,class (:foreground ,nord8))))
     `(font-lock-keyword-face ((,class (:foreground ,nord9))))
     `(font-lock-negation-char-face ((,class (:foreground ,nord9))))
+    `(font-lock-number-face ((,class (:foreground ,nord-numeric))))
+    `(font-lock-operator-face ((,class (:foreground ,nord-operator))))
     `(font-lock-preprocessor-face ((,class (:foreground ,nord10 :weight bold))))
     `(font-lock-property-name-face ((,class (:foreground ,nord8))))
     `(font-lock-property-use-face ((,class (:foreground ,nord8))))
@@ -194,6 +197,7 @@
     `(diff-removed ((,class (:foreground ,nord11))))
 
     ;; > Sh Script
+    `(sh-heredoc ((,class (:foreground ,nord14))))
     `(sh-quoted-exec ((,class (:foreground ,nord8))))
 
     ;; +--- UI ---+
