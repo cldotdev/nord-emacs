@@ -616,6 +616,7 @@
     `(magit-section-heading-selection ((t (:foreground ,nord10 :weight bold))))
     `(magit-diff-context-highlight ((,class (:background ,nord3))))
     `(magit-diff-file-header ((,class (:foreground ,nord8 :box (:color ,nord8)))))
+    `(magit-diff-file-heading ((,class (:weight normal :extend t))))
     `(magit-diffstat-added ((,class (:foreground ,nord14))))
     `(magit-diffstat-removed ((,class (:foreground ,nord11))))
     `(magit-diff-added ((t (:foreground ,nord14))))
