@@ -614,7 +614,7 @@
     `(magit-branch-current ((t (:foreground ,nord9   :weight bold :box t))))
     `(magit-section-heading ((t (:foreground ,nord9 :weight bold))))
     `(magit-section-heading-selection ((t (:foreground ,nord10 :weight bold))))
-    `(magit-diff-context-highlight ((,class (:background ,nord3))))
+    `(magit-diff-context-highlight ((,class (:background ,nord1))))
     `(magit-diff-file-header ((,class (:foreground ,nord8 :box (:color ,nord8)))))
     `(magit-diff-file-heading ((,class (:weight normal :extend t))))
     `(magit-diffstat-added ((,class (:foreground ,nord14))))
@@ -633,9 +633,9 @@
     `(magit-process-ng ((,class (:foreground ,nord13 :weight bold))))
     `(magit-process-ok ((,class (:foreground ,nord14 :weight bold))))
     `(magit-section-heading ((,class (:foreground ,nord7 :weight bold))))
-    `(magit-section-highlight ((,class (:background ,nord2))))
+    `(magit-section-highlight ((,class (:background ,nord1))))
     `(magit-diff-revision-summary ((,class (:inherit nil))))
-    `(magit-diff-revision-summary-highlight ((,class (:background ,nord2 :extend t))))
+    `(magit-diff-revision-summary-highlight ((,class (:background ,nord1 :extend t))))
 
     ;; > Transient
     ;; https://github.com/magit/transient/blob/main/lisp/transient.el#L561
