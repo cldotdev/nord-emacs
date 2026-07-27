@@ -117,6 +117,7 @@
   (nord15 (if (nord-display-truecolor-or-graphic-p) "#B48EAD" "magenta"))
   (nord-annotation (if (nord-display-truecolor-or-graphic-p) "#D08770" "brightyellow"))
   (nord-attribute (if (nord-display-truecolor-or-graphic-p) "#8FBCBB" "cyan"))
+  (nord-blockquote (if (nord-display-truecolor-or-graphic-p) "#81A1C1" "blue"))
   (nord-class (if (nord-display-truecolor-or-graphic-p) "#8FBCBB" "cyan"))
   (nord-comment (if (nord-display-truecolor-or-graphic-p) (nord-theme--brightened-comment-color nord-comment-brightness) "brightblue"))
   (nord-escape (if (nord-display-truecolor-or-graphic-p) "#D08770" "brightyellow"))
@@ -429,7 +430,7 @@
     `(js3-warning-face ((,class (:foreground ,nord13))))
 
     ;; > Markdown
-    `(markdown-blockquote-face ((,class (:foreground ,nord-comment))))
+    `(markdown-blockquote-face ((,class (:foreground ,nord-blockquote))))
     `(markdown-bold-face ((,class (:inherit bold))))
     `(markdown-header-face-1 ((,class (:foreground ,nord8))))
     `(markdown-header-face-2 ((,class (:foreground ,nord8))))
