@@ -133,7 +133,7 @@
   (nord-variable (if (nord-display-truecolor-or-graphic-p) "#D8DEE9" "#D8DEE9"))
   (nord-region-highlight-foreground (if (or
     (string= nord-region-highlight "frost")
-    (string= nord-region-highlight "snowstorm")) "#2E3440" nil))
+    (string= nord-region-highlight "snowstorm")) "#2E3440" 'unspecified))
   (nord-region-highlight-background (if
     (string= nord-region-highlight "frost") "#88C0D0"
       (if (string= nord-region-highlight "snowstorm") "#D8DEE9" "#434C5E")))
