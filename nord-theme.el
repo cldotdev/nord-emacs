@@ -635,6 +635,12 @@
     `(magit-process-ok ((,class (:foreground ,nord14 :weight bold))))
     `(magit-section-heading ((,class (:foreground ,nord7 :weight bold))))
     `(magit-section-highlight ((,class (:background ,nord1))))
+    `(magit-signature-good ((,class (:foreground ,nord14))))
+    `(magit-signature-bad ((,class (:foreground ,nord11 :weight bold))))
+    `(magit-signature-untrusted ((,class (:foreground ,nord7))))
+    `(magit-signature-expired ((,class (:foreground ,nord12))))
+    `(magit-signature-revoked ((,class (:foreground ,nord15))))
+    `(magit-signature-error ((,class (:foreground ,nord8))))
     `(magit-diff-revision-summary ((,class (:inherit nil))))
     `(magit-diff-revision-summary-highlight ((,class (:background ,nord1 :extend t))))
 
